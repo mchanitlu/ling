@@ -1,11 +1,6 @@
 import sys
-
 text = sys.stdin.read()
-
 for c in text:
-	if c == '.':
-		sys.stdout.write(c + '\n')
-	else:
-		sys.stdout.write(c)
+        if c == '.':
+                text = text.replace('.','\n')
 print(text)
-
