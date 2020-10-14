@@ -7,7 +7,7 @@ for i in range(len(z)):
 def newlist(z):
 	res = []
 	for el in z:
-		sub = el.split(',')
+		sub = el.split("!@#$%^&*")
 		res.append(sub)
 		res = [ele for ele in res if ele != [' ']] 
 		res = [ele for ele in res if ele != ['']]  
@@ -28,7 +28,7 @@ a = "ID\tFROM\tLEMMA\tUPOS\tXPOS\tFEATS\tHEAD\tDEPREL\tDEPS\tMISC"
 print(a)
 
 for i in range(len(flat_list)):
-	print('# sent_id = %s' % (i))
+	print('# sent_id = %s' % (i+1))
 	nano = ' '.join(flat_list[i])
 	print("# text = " + str(nano))
 	flat_list[i] = list(filter(lambda item: item.strip(), flat_list[i]))
