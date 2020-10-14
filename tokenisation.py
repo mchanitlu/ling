@@ -36,32 +36,6 @@ for i in range(len(flat_list)):
 		u = flat_list[i]
 		print("%d\t%s\t_\t_\t_\t_\t_\t_\t_"%(c+1,u[c]))
 
-#addresses = re.findall(r'[\w\.-]+@[\w\.-]+', doc)
-#print([el[:].split()[:] for el in w])		
-#q = '\t'.join(z)
-#print(q)
-#k = q.split()
-#for h in k:
-	#if h == '\t':
-		#print("ID")
-#for o in q:
-	#if o == '()",.':
-		#'\n'.join(q)
-#return 
-#a = "ID\tFROM\tLEMMA\tUPOS\tXPOS\tFEATS\tHEAD\tDEPREL\tDEPS\tMISC"
-#print(a) 
-#for i in range(len(new)):
-	# print("%d\t%s\t-\t-\t-\t-\t-\t-\t-"%(i+1,new[i]))
-
-#import sys
-#text = sys.stdin.read()
-#z = text.split()
-#print(z)
-#a = "ID\tFROM\tLEMMA\tUPOS\tXPOS\tFEATS\tHEAD\tDEPREL\tDEPS\tMISC"
-#print(a)
-#for i in range(len(z)):
-       # print("%d\t%s\t-\t-\t-\t-\t-\t-\t-"%(i+1,z[i]))
-
 
 
 
