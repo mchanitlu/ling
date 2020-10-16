@@ -39,5 +39,18 @@ for i in range(len(flat_list)):
 	flat_list[i] = list(filter(lambda item: item.strip(), flat_list[i]))
 	for c in range(len(flat_list[i])):
 		u = flat_list[i]
-		print("%d\t%s\t_\t_\t_\t_\t_\t_\t_"%(c+1,u[c]))
+		for c in range(len(flat_list[i])):
+                u = flat_list[i]
+                if u[c] == ',':
+                        print("%d\t%s\t_\t_\t_\t_\t_\t_\t_"%(c+1,u[c]))
+                elif u[c] == '-':
+                        print("%d\t%s\t_\t_\t_\t_\t_\t_\t_"%(c+1,u[c]))
+                elif u[c] == '"':
+                        print("%d\t%s\t_\t_\t_\t_\t_\t_\t_"%(c+1,u[c]))
+                elif u[c] == ')':
+                        print("%d\t%s\t_\t_\t_\t_\t_\t_\t_"%(c+1,u[c]))
+                elif u[c] == '(':
+                        print("%d\t%s\t_\t_\t_\t_\t_\t_\t_"%(c+1,u[c]))
+                else:
+                        print("%d\t%s\t_\t_\t_\t_\t_\t_\t_\t_"%(c+1,u[c]))
 
